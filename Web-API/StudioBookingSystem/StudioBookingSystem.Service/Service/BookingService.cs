@@ -14,17 +14,25 @@ namespace StudioBookingSystem.Service.Service
     public class BookingService : IBookingService
     {
         private readonly IBookingRepository _bookingRepository;
+        private readonly IStudioRepository _studioRepository;
         private readonly IUnitOfWork _unitOfWork;
 
-        public BookingService(IBookingRepository bookingRepository, IUnitOfWork unitOfWork)
+        public BookingService(IBookingRepository bookingRepository, IStudioRepository studioRepository,
+            IUnitOfWork unitOfWork)
         {
             _bookingRepository=bookingRepository;
+            _studioRepository=studioRepository;
             _unitOfWork=unitOfWork;
         }
 
-        public Task CreateBooking(Booking booking)
+        public async Task CreateBooking(Booking booking)
         {
-            throw new NotImplementedException();
+            // Check availablity
+
+            // if ok
+            _bookingRepository.Add(booking);
+           await _unitOfWork.SaveChanges();
+            
         }
 
         public async Task<List<Booking>> GetBookings()
