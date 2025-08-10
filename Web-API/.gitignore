@@ -1,0 +1,74 @@
+## Ignore build results
+bin/
+obj/
+out/
+
+## User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Visual Studio Code
+.vscode/
+
+## Visual Studio
+.vs/
+
+## ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+## ASP.NET Identity database
+App_Data/
+
+## Publish folder (optional)
+publish/
+*.Publish.xml
+
+## Rider IDE
+.idea/
+
+## DotCover
+*.dotCover
+
+## Logs
+*.log
+logs/
+
+## NuGet
+*.nupkg
+.nuget/
+packages/
+project.lock.json
+project.fragment.lock.json
+
+## Others
+_ReSharper*/
+*.resharper
+*.dbmdl
+*.bak
+*.cache
+*.mdb
+*.pdb
+
+## Environment files
+.env
+.env.*
+
+## Temporary files
+*.tmp
+*.temp
+~$*
+
+## OS-specific
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+
