@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\StudioBookingSystem.Common\StudioBookingSystem.Common.csproj" />
+    <ProjectReference Include="..\StudioBookingSystem.Repository\StudioBookingSystem.Repository.csproj" />
+  </ItemGroup>
+
 </Project>
