@@ -15,4 +15,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\StudioBookingSystem.Common\StudioBookingSystem.Common.csproj" />
+  </ItemGroup>
+
 </Project>
