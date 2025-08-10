@@ -19,7 +19,7 @@ namespace StudioBookingSystem.Repository.EntityConfig
             builder.Property(b => b.UserName).IsRequired().HasMaxLength(150);
             builder.Property(b => b.Email).IsRequired().HasMaxLength(150);
             builder.Property(b => b.Date).IsRequired();
-            builder.Property(b => b.TimeSlot).IsRequired().HasMaxLength(150);
+            
             builder.HasOne(b => b.TimeSlot)
             .WithOne(ts => ts.Booking)
             .HasForeignKey<TimeSlot>(ts => ts.BookingId);
